@@ -1,8 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.less';
+import axios from 'axios'
 
 function App() {
+  axios.get("/api/search?keywords=海阔天空").then(r => {
+    console.log('r :', r);
+  })
+
   return (
     <div className="App">
       <header className="App-header">
