@@ -1,12 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.less';
-import axios from 'axios'
+import { request } from '@/utils'
 
 function App() {
-  axios.get("/api/search?keywords=海阔天空").then(r => {
-    console.log('r :', r);
-  })
 
   return (
     <div className="App">
