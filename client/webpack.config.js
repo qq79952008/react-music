@@ -58,6 +58,27 @@ module.exports = {
           'less-loader'
         ]
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            outputPath: 'images/',
+            limit: 10 * 1024
+          }
+        }
+      },
+      {
+        test: /\.(eot|woff2?|ttf|svg)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            outputPath: 'fonts/',
+            publicPath: 'fonts/',
+            limit: 5 * 1024
+          }
+        }
+      }
     ]
   },
   plugins: [

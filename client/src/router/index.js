@@ -4,7 +4,7 @@ import { Route, Link, Switch } from 'react-router-dom'
 import Home from '@/pages/Home'
 import Counter from '@/pages/Counter'
 
-const BasicLayout = () => (
+const Router = () => (
   <div>
     <header style={{display: 'flex'}}>
       <Link to="/">Home</Link>
@@ -20,4 +20,4 @@ const BasicLayout = () => (
   </div>
 )
 
-export default BasicLayout
+export default Router
