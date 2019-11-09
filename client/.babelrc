@@ -2,6 +2,14 @@
   "presets": [["@babel/preset-env",
     { "useBuiltIns": "usage" }],
     "@babel/preset-react"],
-"plugins": ["@babel/plugin-transform-runtime",
-  "react-hot-loader/babel"]
+"plugins": [
+  "@babel/plugin-transform-runtime",
+  "react-hot-loader/babel",
+  [
+    "import", {
+      "libraryName": "antd",
+      "style": true
+    }
+  ]
+]
 }

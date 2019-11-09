@@ -45,17 +45,27 @@ module.exports = {
             }
           },
           'postcss-loader',
-          'less-loader'
+          {
+            loader: 'less-loader',
+            options: {
+              javascriptEnabled: true
+            }
+          }
         ]
       },
       {
         test: [/\.css$/, /\.less$/],
-        include: path.resolve(__dirname, 'src/style/global'),
+        include: [/node_modules/, path.resolve(__dirname, 'src/style/global')],
         use: [
           'style-loader',
           'css-loader',
           'postcss-loader',
-          'less-loader'
+          {
+            loader: 'less-loader',
+            options: {
+              javascriptEnabled: true
+            }
+          }
         ]
       },
       {
@@ -93,10 +103,11 @@ module.exports = {
     hot: true,
     contentBase: path.join(__dirname, "./dist"),
     host: "127.0.0.1",// 可以使用手机访问
-    port: 8080,
+    port: 10011,
     historyApiFallback: true, // 该选项的作用所有的404都连接到index.html
     clientLogLevel: "error",
     stats: 'errors-only',
+    open: true,
     proxy: {
       // 代理到后端的服务地址，会拦截所有以api开头的请求地址
       "/api": "http://localhost:10010"

@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import style from './Counter.less'
+import { Button } from 'antd'
 export default class Counter extends PureComponent {
   constructor(props){
     super(props)
@@ -22,13 +23,12 @@ export default class Counter extends PureComponent {
 
 
   render(){
-    console.log('width', document.documentElement.clientWidth)
     return(
       <div className={style.counter}>
         <div className="show">{this.state.count}</div>
         <div className="btns" style={{display: 'flex'}}>
-          <button style={{marginRight: '30px'}} onClick={this.increase.bind(this,1)}>+</button>
-          <button onClick={this.decrease.bind(this,1)}>-</button>
+          <Button style={{marginRight: '30px'}} onClick={this.increase.bind(this,1)}>+</Button>
+          <Button onClick={this.decrease.bind(this,1)}>-</Button>
         </div>
       </div>
     )
