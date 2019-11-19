@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import style from './Sider.less'
+import style from './Sider.scss'
 
 export default class Sider extends PureComponent {
   render(){

@@ -4,7 +4,7 @@ import Main from '@/components/Main/Main'
 import Player from '@/components/Player/Player'
 import Sider from '@/components/Sider/Sider'
 import Container from '@/components/Container/Container'
-import style from './BasicLayout.less'
+import style from './BasicLayout.scss'
 export default class BasicLayout extends PureComponent {
   constructor(props){
     super(props)

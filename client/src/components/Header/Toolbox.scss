@@ -1,0 +1,44 @@
+.toolbox{
+  margin-left: 20Px;
+  display: flex;
+  align-items: center;
+  .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .item{
+      width: 20Px;
+      height: 20Px;
+      border-radius: 50%;
+      margin-right: 10Px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.red{
+        background: #ed655a;
+        color: #ed655a;
+      }
+      &.yellow{
+        background: #e0c04c;
+        color: #e0c04c;
+      }
+      &.green{
+        background: #72be47;
+        color: #72be47;
+      }
+    }
+    &:hover{
+      .item{
+        color: #fff;
+      }
+    }
+  }
+  .arrows{
+    display: flex;
+    margin-left: 30Px;
+    font-size: 30Px;
+    .item{
+      margin: 10Px;
+    }
+  }
+}

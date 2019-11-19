@@ -1,5 +1,5 @@
 import React, { PureComponent, Fragment } from 'react'
-import style from './Page.less'
+import style from './Page.scss'
 import Loading from '@/components/Loading/Loading'
 
 export default class Page extends PureComponent {
@@ -12,7 +12,8 @@ export default class Page extends PureComponent {
     const { loading } = this.props
     return (
       <div className={style.page}>
-        {loading? <Loading/> : this.props.children}
+        {loading? <Loading/> : null}
+        {this.props.children}
       </div>
     )
   }

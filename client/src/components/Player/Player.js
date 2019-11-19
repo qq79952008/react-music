@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import style from './Player.less'
+import style from './Player.scss'
 
 export default class Player extends PureComponent {
   render(){

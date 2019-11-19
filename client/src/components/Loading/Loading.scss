@@ -1,0 +1,36 @@
+.loading{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999;
+  .loadingBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .loadingIcon{
+      font-size: 30px;
+      animation: rotate 1s infinite linear;
+      animation-delay: 0;
+      color: #d33a31;
+    }
+    .loadingText{
+      font-size: 10px;
+      color: #d33a31;
+
+    }
+  }
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}

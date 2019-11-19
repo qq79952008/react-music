@@ -34,7 +34,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.less$/,
+        test: /\.scss$/,
         exclude: [/node_modules/, path.resolve(__dirname, 'src/style/global')],
         use: [
           'style-loader',
@@ -45,27 +45,17 @@ module.exports = {
             }
           },
           'postcss-loader',
-          {
-            loader: 'less-loader',
-            options: {
-              javascriptEnabled: true
-            }
-          }
+          'sass-loader'
         ]
       },
       {
-        test: [/\.css$/, /\.less$/],
+        test: [/\.css$/, /\.scss$/],
         include: [/node_modules/, path.resolve(__dirname, 'src/style/global')],
         use: [
           'style-loader',
           'css-loader',
           'postcss-loader',
-          {
-            loader: 'less-loader',
-            options: {
-              javascriptEnabled: true
-            }
-          }
+          'sass-loader'
         ]
       },
       {

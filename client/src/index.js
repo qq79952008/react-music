@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { AppContainer } from 'react-hot-loader'
 import Home from './pages/Home'
 import Router from './router'
-import './style/global.less'
+import './style/global.scss'
 renderWithHotReload(Router)
 
 if(module.hot){

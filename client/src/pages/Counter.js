@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import style from './Counter.less'
+import style from './Counter.scss'
 import { Button } from 'antd'
 export default class Counter extends PureComponent {
   constructor(props){

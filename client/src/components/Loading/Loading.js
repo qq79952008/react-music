@@ -1,13 +1,13 @@
 import React, { PureComponent } from 'react'
-import style from './Loading.less'
+import style from './Loading.scss'
 export default class Loading extends PureComponent {
 
   render(){
     return (
       <div className={style.loading}>
         <div className={style.loadingBox}>
-          <span className={`${style.loadiungIcon} icon-refresh`}></span>
-          <span className={style.loadiungText}>Loading</span>
+          <span className={`${style.loadingIcon} icon-refresh`}></span>
+          <span className={style.loadingText}>Loading</span>
         </div>
       </div>
     )
