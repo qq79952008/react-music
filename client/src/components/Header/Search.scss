@@ -1,0 +1,26 @@
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .searchBox{
+    position: relative;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    .searchInput{
+      height: 100%;
+      border: none;
+      outline: none;
+      font-size: 8px;
+      line-height: 8px;
+      padding: 0 10px 0 20px;
+      background: #ededed;
+    }
+    .searchIcon{
+      position: absolute;
+      font-size: 10px;
+      left: 8px;
+      z-index: 100;
+    }
+  }
+}
