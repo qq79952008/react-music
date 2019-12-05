@@ -1,0 +1,24 @@
+.sider{
+  width: 250PX;
+  background: #ededed;
+  .menuList{
+    padding-top: 20PX;
+    .menuItem{
+      display: flex;
+      align-items: center;
+      font-size: 16PX;
+      padding:  10PX 20PX;
+      cursor: pointer;
+      line-height: 20PX;
+      margin-top: 2PX;
+      .icon{
+        margin-right: 20PX;
+        font-size: 20PX;
+      }
+      &:hover{
+        color: red;
+        background: #E2E2E2;
+      }
+    }
+  }
+}
